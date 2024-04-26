@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: "Space Mono", monospace;
+      }
+      main {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(231, 231, 231);
+        overflow: auto;
+        padding-bottom: 100px;
+      }
+      main > h1 {
+        text-align: center;
+        margin-top: 40px;
+      }
+      main > div:nth-of-type(1) {
+        width: 100%;
+        margin-top: 100px;
+      }
+      main > div:nth-of-type(1) > .search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main > div:nth-of-type(1) > .search > input {
+        width: 250px;
+        padding: 10px 30px;
+        font-size: 20px;
+        border: none;
+        margin: 0 20px;
+        border-radius: 10px;
+      }
+      main > div:nth-of-type(1) > .fillter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 60px;
+      }
+      main > div:nth-of-type(1) > .fillter > span {
+        display: block;
+        margin: 0 20px;
+        background-color: rgb(69, 116, 247);
+        padding: 15px 30px;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      main > div:nth-of-type(1) > .products {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 60px;
+        flex-wrap: wrap;
+      }
+      main > div:nth-of-type(1) > .products > .box {
+        width: 30%;
+        box-shadow: inset 25px 28px 77px rgba(0, 0, 0, 0.05),
+          25px 35px 55px rgba(0, 0, 0, 0.05),
+          inset -45px -31px 95px rgba(255, 255, 255, 0.9);
+        background-color: white;
+        padding: 20px 30px;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: all 1s;
+      }
+      main > div:nth-of-type(1) > .products > .box > figure {
+        width: 100%;
+        height: 300px;
+      }
+      main > div:nth-of-type(1) > .products > .box > figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      main > div:nth-of-type(1) > .products > .box > h2 {
+        margin-top: 20px;
+      }
+      .hide {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        display: none;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <h1>menu product</h1>
+
+      <div>
+        <div class="search">
+          <input id="nameInput" value="" type="text" placeholder="name..." />
+          <input id="price" type="text" placeholder="price..." />
+        </div>
+        <div class="fillter">
+          <span>all</span>
+          <span>jocket</span>
+          <span>completeset</span>
+          <span>shirt</span>
+          <span>watch</span>
+        </div>
+        <div class="products">
+          <div class="box">
+            <figure>
+              <img src="images/1.jpg" />
+            </figure>
+            <h2>shoes 1</h2>
+            <h4>price : 34000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/composition-with-spa-uniform-white-background_392895-333749.jpg"
+              />
+            </figure>
+            <h2>jocket 1</h2>
+            <h4>price : 55000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/luxury-silver-watch-white-table-business-man-accessories_237502-412.jpg"
+              />
+            </figure>
+            <h2>watch 1</h2>
+            <h4>price : 75000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img src="images/realistic-fitness-trackers_23-2148530529.jpg" />
+            </figure>
+            <h2>watch 2</h2>
+            <h4>price : 248000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/shirt-hanger-with-green-background_23-2150264157.jpg"
+              />
+            </figure>
+            <h2>shirt 1</h2>
+            <h4>price : 193000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/shoes-sale-social-media-post-square-banner-template-design_505751-2904.jpg"
+              />
+            </figure>
+            <h2>shoes 2</h2>
+            <h4>price : 29000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/still-life-rendering-jackets-display_23-2149745027.jpg"
+              />
+            </figure>
+            <h2>jocket 2</h2>
+            <h4>price : 122000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/view-trucker-hat-with-baseball-equipment_23-2149410056.jpg"
+              />
+            </figure>
+            <h2>completeset 1</h2>
+            <h4>price : 232000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img src="images/white-jacket-floating-white_176382-1843.jpg" />
+            </figure>
+            <h2>jocket 3</h2>
+            <h4>price : 322000</h4>
+          </div>
+          <div class="box">
+            <figure>
+              <img
+                src="images/top-view-composition-different-traveling-elements_23-2148884940.jpg"
+              />
+            </figure>
+            <h2>completeset 2</h2>
+            <h4>price : 923000</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      let productsTitle = document.querySelectorAll(".box>h2");
+      let productsPrice = document.querySelectorAll(".box>h4");
+      let productsParent = document.querySelector(".products");
+      let nameInput = document.getElementById("nameInput");
+      let price = document.getElementById("price");
+      let products = document.querySelectorAll(".box");
+      let fillter = document.querySelectorAll(".fillter>span");
+      fillter.forEach(function (el) {
+        el.addEventListener("click", function (e) {
+          let fillters = e.target.innerText;
+          productsParent.setAttribute("data-selected", fillters);
+          productsTitle.forEach(function (product, index) {
+            let productTitle = product.innerText.split(" ")[0];
+            if (fillters === productsParent.getAttribute("data-selected")) {
+              products[index].style.display = "block";
+            }
+            if (fillters !== productTitle) {
+              products[index].style.display = "none";
+            }
+            if (fillters === "all") {
+              products[index].style.display = "block";
+            }
+          });
+        });
+      });
+      nameInput.addEventListener("input", function (e) {
+        productsTitle.forEach(function (product, index) {
+          let productTitle = product.innerText.split(" ")[0];
+
+          if (!productTitle.includes(e.target.value)) {
+            products[index].classList.add("hide");
+          } else {
+            products[index].classList.remove("hide");
+          }
+        });
+      });
+      price.addEventListener("input", function (e) {
+        productsPrice.forEach(function (product, index) {
+          let productsPrice = product.innerText.split(" : ")[1];
+
+          if (productsPrice.substring(0, 1) !== e.target.value) {
+            products[index].classList.add("hide");
+          } else {
+            // alert("ok")
+            products[index].classList.remove("hide");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
